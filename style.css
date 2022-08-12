@@ -15,6 +15,7 @@
 .list{
 	list-style-type: katakana;
 }*/
+@media only screen and (min-width: 500px) {
 	.header{
 		background-color: #01200e;
 		color: red;
@@ -72,3 +73,63 @@
 		border-radius: 16px;
 		background-color: seagreen;
 	}
+}
+@media only screen and (max-width: 500px) {
+	.header{
+		background-color: #01200e;
+		color: red;
+	 }
+	#personal-info{
+		width: 380px;
+		height: 150px;
+		border: 1px dashed; black;
+		padding: 10px;
+		margin: 20px 20px 20px 0px;
+		background-color: #e8e9ee;
+	}
+	.section-header{
+		width: 250px;
+		height: 50px;
+		color: white;
+		background-color: orange;
+		border-radius: 50px;
+		padding: 10px 10px 20px 10px;
+		margin: 20px;
+		align-content: left;
+	}
+	.list{
+		list-style-type: katakana;
+	}
+	.item-description{
+		width: 0px;
+		height: 0px;
+		border: 1px solid black;
+	    overflow: scroll; 
+		display: none;
+	}
+	.open{
+		-webkit-transition:  width 1s, height 1s;
+		-moz-transition:  width 1s, height 1s;
+		-o-transition: :width 1s, height 1s;
+		transition: width 1s, height 1s;
+		width: 300px;
+		height: 150px;
+		display: block;
+	}
+	.red-light{
+		display: inline;
+		width: 30px;
+		height: 15px;
+		margin: 10px;
+		border-radius: 16px;
+		background-color: red;
+	}
+	.open-description{
+		display: inline;
+		width: 30px;
+		height: 15px;
+		margin: 10px;
+		border-radius: 16px;
+		background-color: seagreen;
+	}
+}
